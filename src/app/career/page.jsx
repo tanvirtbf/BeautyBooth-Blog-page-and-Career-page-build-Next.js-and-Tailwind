@@ -47,6 +47,7 @@ const page = () => {
               state={item.state}
               positions={item.positions}
               btnState={item.btnState}
+              isTwoBtn={false}
             />
           ))}
         </div>
