@@ -4,7 +4,7 @@ import LocationImage from "../../public/Page-1.png";
 import VectorMailImage from "../../public/Vector.png";
 import RoleCartButton from "./RoleCartButton";
 
-const CurrentOpenRole = ({heading,remoteOrOffice,state,positions,btnState}) => {
+const CurrentOpenRole = ({id,heading,remoteOrOffice,state,positions,btnState}) => {
   return (
     <div className="cart-shadow rounded-lg p-4 sm:p-5 bg-white grid grid-cols-12 gap-5">
       <div className="flex flex-col gap-3 col-span-12 sm:col-span-8">
@@ -31,7 +31,7 @@ const CurrentOpenRole = ({heading,remoteOrOffice,state,positions,btnState}) => {
         </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
-        <RoleCartButton btnState={btnState}/>
+        <RoleCartButton btnState={btnState} id={id} />
       </div>
     </div>
   );

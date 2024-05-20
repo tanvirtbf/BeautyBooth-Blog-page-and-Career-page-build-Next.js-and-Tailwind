@@ -41,6 +41,7 @@ const page = () => {
           {roleArr.map((item) => (
             <CurrentOpenRole
               key={item.id}
+              id={item.id}
               heading={item.heading}
               remoteOrOffice={item.remoteOrOffice}
               state={item.state}
