@@ -13,13 +13,14 @@ const CurrentOpenRole = ({
   btnState,
   isTwoBtn,
 }) => {
+
+
   return (
     <div className="cart-shadow rounded-lg p-4 sm:p-5 bg-white grid grid-cols-12 gap-5">
       <div className="flex flex-col gap-3 col-span-12 sm:col-span-8">
         <h3 className="font-medium text-sm sm:text-base text-[#222222]">
           {heading}
         </h3>
-        <div>
           <div className="flex justify-between">
             <div className="flex gap-[6px] items-center">
               <Image src={LocationImage} alt="locationimage" />
@@ -40,7 +41,6 @@ const CurrentOpenRole = ({
               </span>
             </div>
           </div>
-        </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
         {isTwoBtn ? (

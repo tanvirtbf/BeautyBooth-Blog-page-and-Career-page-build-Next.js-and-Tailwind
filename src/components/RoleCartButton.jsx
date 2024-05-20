@@ -9,7 +9,7 @@ const RoleCartButton = ({ btnState, id, isTwoBtn }) => {
   if (isTwoBtn && btnState) {
     buttonText = "All Jobs";
   } else if (!isTwoBtn) {
-    buttonText = "View Jobs";
+    buttonText = "Apply Now";
   }
 
   return (
