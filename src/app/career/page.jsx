@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Banner from "../../../public/Banner.png";
+import CurrentOpenRole from "@/components/CurrentOpenRole";
 
 const page = () => {
   return (
@@ -37,8 +38,13 @@ const page = () => {
       </div>
       <div className="mt-8 flex flex-col gap-4">
         <h2 className="heading">Current open role</h2>
-        <div>
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
+          <CurrentOpenRole />
+          <CurrentOpenRole />
+          <CurrentOpenRole />
+          <CurrentOpenRole />
+          <CurrentOpenRole />
+          <CurrentOpenRole />
         </div>
       </div>
     </div>
