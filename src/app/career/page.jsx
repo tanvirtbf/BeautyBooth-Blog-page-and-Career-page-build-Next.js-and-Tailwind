@@ -1,17 +1,24 @@
+import CurrentOpenRole from "@/components/CurrentOpenRole";
 import Image from "next/image";
 import Banner from "../../../public/Banner.png";
-import CurrentOpenRole from "@/components/CurrentOpenRole";
+
+const roleArr = [
+  {id: Date.now(), heading:"Junior UX Designer", remoteOrOffice: false, state:"Junior", positions:2, btnState:true},
+  {id: Date.now(), heading:"Marketing Specialist", remoteOrOffice: true, state:"2-5 Years", positions:2, btnState:true},
+  {id: Date.now(), heading:"Backend Developer", remoteOrOffice: true, state:"Junior", positions:2, btnState:true},
+  {id: Date.now(), heading:"Content Writer", remoteOrOffice: false, state:"Mid-level", positions:2, btnState:true},
+  {id: Date.now(), heading:"Tiktok Specialist", remoteOrOffice: true, state:"Junior", positions:2, btnState:false},
+  {id: Date.now(), heading:"Social Media Management", remoteOrOffice: false, state:"Mid-level", positions:2, btnState:false},
+]
 
 const page = () => {
   return (
-    <div className="container" style={{fontFamily:'roboto'}}>
+    <div className="container" style={{ fontFamily: "roboto" }}>
       <div>
         <Image src={Banner} alt="banner" priority />
       </div>
       <div className="mt-8 flex flex-col gap-3">
-        <h1 className="heading">
-          Career at Beautybooth
-        </h1>
+        <h1 className="heading">Career at Beautybooth</h1>
         <p className="font-normal text-sm sm:text-base">
           Beauty Booth is an online beauty platform that offers affordable
           skincare, cosmetics, and accessories in a range of options. Putting
@@ -39,12 +46,16 @@ const page = () => {
       <div className="mt-8 flex flex-col gap-4">
         <h2 className="heading">Current open role</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
-          <CurrentOpenRole />
-          <CurrentOpenRole />
-          <CurrentOpenRole />
-          <CurrentOpenRole />
-          <CurrentOpenRole />
-          <CurrentOpenRole />
+          {roleArr.map((item) => (
+            <CurrentOpenRole
+              key={item.id}
+              heading={item.heading}
+              remoteOrOffice={item.remoteOrOffice}
+              state={item.state}
+              positions={item.positions}
+              btnState={item.btnState}
+            />
+          ))}
         </div>
       </div>
     </div>
