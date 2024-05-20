@@ -30,7 +30,7 @@ const CurrentOpenRole = () => {
         </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
-        <button className="w-[116px] h-[44px] text-center bg-[#00CA8D] rounded-md text-xs sm:text-sm font-medium text-[#FFFFFF]">
+        <button className="w-[106px] sm:w-[116px] h-[36px] sm:h-[44px] text-center bg-[#00CA8D] rounded-md text-xs sm:text-sm font-medium text-[#FFFFFF]">
           View details
         </button>
       </div>
