@@ -8,7 +8,7 @@ const page = () => {
         <Image src={Banner} alt="banner" priority />
       </div>
       <div className="mt-8 flex flex-col gap-3">
-        <h1 className="heading font-bold text-2xl text-[#222222]">
+        <h1 className="heading">
           Career at Beautybooth
         </h1>
         <p className="font-normal text-base">
@@ -35,7 +35,12 @@ const page = () => {
           industry.
         </p>
       </div>
-      <div></div>
+      <div className="mt-8 flex flex-col gap-4">
+        <h2 className="heading">Current open role</h2>
+        <div>
+          
+        </div>
+      </div>
     </div>
   );
 };
