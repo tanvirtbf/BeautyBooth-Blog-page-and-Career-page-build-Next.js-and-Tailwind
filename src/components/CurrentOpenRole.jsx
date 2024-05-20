@@ -2,6 +2,7 @@ import Image from "next/image";
 import GraphChartImage from "../../public/graph-chart 1.png";
 import LocationImage from "../../public/Page-1.png";
 import VectorMailImage from "../../public/Vector.png";
+import RoleCartButton from "./RoleCartButton";
 
 const CurrentOpenRole = ({heading,remoteOrOffice,state,positions,btnState}) => {
   return (
@@ -30,9 +31,7 @@ const CurrentOpenRole = ({heading,remoteOrOffice,state,positions,btnState}) => {
         </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
-        <button className={`w-[106px] sm:w-[116px] h-[36px] sm:h-[44px] text-center ${btnState ? 'bg-[#00CA8D]' : 'bg-[#999999]'} rounded-md text-xs sm:text-sm font-medium text-[#FFFFFF]`}>
-          {btnState ? 'View details' : 'Closed'}
-        </button>
+        <RoleCartButton btnState={btnState}/>
       </div>
     </div>
   );
