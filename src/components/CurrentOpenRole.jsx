@@ -5,8 +5,8 @@ import VectorMailImage from "../../public/Vector.png";
 
 const CurrentOpenRole = () => {
   return (
-    <div className="cart-shadow rounded-lg p-5 bg-white grid grid-cols-12">
-      <div className="flex flex-col gap-3 col-span-8">
+    <div className="cart-shadow rounded-lg p-5 bg-white grid grid-cols-12 gap-5">
+      <div className="flex flex-col gap-3 col-span-12 sm:col-span-8">
         <h3 className="font-medium text-base text-[#222222]">
           Junior UX Designer
         </h3>
@@ -29,7 +29,7 @@ const CurrentOpenRole = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end items-center col-span-4">
+      <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
         <button className="w-[116px] h-[44px] text-center bg-[#00CA8D] rounded-md text-sm font-medium text-[#FFFFFF]">
           View details
         </button>
