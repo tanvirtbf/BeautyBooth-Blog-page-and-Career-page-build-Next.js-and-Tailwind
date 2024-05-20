@@ -21,26 +21,26 @@ const CurrentOpenRole = ({
         <h3 className="font-medium text-sm sm:text-base text-[#222222]">
           {heading}
         </h3>
-          <div className="flex justify-between">
-            <div className="flex gap-[6px] items-center">
-              <Image src={LocationImage} alt="locationimage" />
-              <span className="font-normal text-xs sm:text-sm text-[#717171]">
-                {remoteOrOffice ? "Office" : "Remote"}
-              </span>
-            </div>
-            <div className="flex gap-[6px] items-center">
-              <Image src={GraphChartImage} alt="locationimage" />
-              <span className="font-normal text-xs sm:text-sm text-[#717171]">
-                {state}
-              </span>
-            </div>
-            <div className="flex gap-[6px] items-center">
-              <Image src={VectorMailImage} alt="locationimage" />
-              <span className="font-normal text-xs sm:text-sm text-[#717171]">
-                {positions}
-              </span>
-            </div>
+        <div className={`flex ${isTwoBtn ? 'gap-6' : 'justify-between'}`}>
+          <div className="flex gap-[6px] items-center">
+            <Image src={LocationImage} alt="locationimage" />
+            <span className="font-normal text-xs sm:text-sm text-[#717171]">
+              {remoteOrOffice ? "Office" : "Remote"}
+            </span>
           </div>
+          <div className="flex gap-[6px] items-center">
+            <Image src={GraphChartImage} alt="locationimage" />
+            <span className="font-normal text-xs sm:text-sm text-[#717171]">
+              {state}
+            </span>
+          </div>
+          <div className="flex gap-[6px] items-center">
+            <Image src={VectorMailImage} alt="locationimage" />
+            <span className="font-normal text-xs sm:text-sm text-[#717171]">
+              {positions}
+            </span>
+          </div>
+        </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
         {isTwoBtn ? (
