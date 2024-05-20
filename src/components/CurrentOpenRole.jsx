@@ -46,7 +46,7 @@ const CurrentOpenRole = ({
         {isTwoBtn ? (
           <div className="flex gap-5">
             <RoleCartButton btnState={btnState} id={id} isTwoBtn={isTwoBtn}/>
-            <RoleCartButton btnState={btnState} id={id} />
+            <RoleCartButton btnState={btnState} id={id} isTwoBtn={false}/>
           </div>
         ) : (
           <RoleCartButton btnState={btnState} id={id} />

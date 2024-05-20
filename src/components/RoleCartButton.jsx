@@ -2,7 +2,6 @@
 import { useRouter } from "next/navigation";
 
 const RoleCartButton = ({btnState,id,isTwoBtn}) => {
-  console.log(isTwoBtn)
   const router = useRouter()
   return (
     <>
@@ -12,7 +11,7 @@ const RoleCartButton = ({btnState,id,isTwoBtn}) => {
           btnState ? "bg-[#00CA8D]" : "bg-[#999999]"
         } rounded-md text-xs sm:text-sm font-medium text-[#FFFFFF] ${isTwoBtn && "bg-white text-[#5A5A5A] border-[#DDDDDD] border-[1px]"}`}
       >
-        {isTwoBtn? "All Jobs" : '' && btnState ? "View details" : "Closed"}
+        {isTwoBtn? "All Jobs" : 'Apply Now' && btnState ? "View details" : `${isTwoBtn? 'Apply Now': 'Closed'}`}
 
       </button>
     </>
