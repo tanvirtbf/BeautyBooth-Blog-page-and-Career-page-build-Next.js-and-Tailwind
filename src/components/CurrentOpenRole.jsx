@@ -5,6 +5,7 @@ import VectorMailImage from "../../public/Vector.png";
 import RoleCartButton from "./RoleCartButton";
 
 const CurrentOpenRole = ({id,heading,remoteOrOffice,state,positions,btnState}) => {
+  console.log(heading)
   return (
     <div className="cart-shadow rounded-lg p-4 sm:p-5 bg-white grid grid-cols-12 gap-5">
       <div className="flex flex-col gap-3 col-span-12 sm:col-span-8">
