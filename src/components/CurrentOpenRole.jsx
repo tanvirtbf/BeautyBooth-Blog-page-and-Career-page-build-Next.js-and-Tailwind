@@ -51,7 +51,7 @@ const CurrentOpenRole = ({
               <RoleCartButton btnState={btnState} id={id} isTwoBtn={true} />
             </div>
             <div className="col-span-6 sm:col-span-1">
-              <RoleCartButton btnState={btnState} id={id} isTwoBtn={false} />
+              <RoleCartButton btnState={btnState} id={id}  />
             </div>
           </div>
         ) : (
