@@ -12,7 +12,7 @@ const page = () => {
         <h1 className="heading">
           Career at Beautybooth
         </h1>
-        <p className="font-normal text-base">
+        <p className="font-normal text-sm sm:text-base">
           Beauty Booth is an online beauty platform that offers affordable
           skincare, cosmetics, and accessories in a range of options. Putting
           the requirements of our clients first, we strive to meet all of their
