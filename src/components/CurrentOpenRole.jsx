@@ -4,8 +4,15 @@ import LocationImage from "../../public/Page-1.png";
 import VectorMailImage from "../../public/Vector.png";
 import RoleCartButton from "./RoleCartButton";
 
-const CurrentOpenRole = ({id,heading,remoteOrOffice,state,positions,btnState}) => {
-  console.log(heading)
+const CurrentOpenRole = ({
+  id,
+  heading,
+  remoteOrOffice,
+  state,
+  positions,
+  btnState,
+  isTwoBtn,
+}) => {
   return (
     <div className="cart-shadow rounded-lg p-4 sm:p-5 bg-white grid grid-cols-12 gap-5">
       <div className="flex flex-col gap-3 col-span-12 sm:col-span-8">
@@ -16,11 +23,15 @@ const CurrentOpenRole = ({id,heading,remoteOrOffice,state,positions,btnState}) =
           <div className="flex justify-between">
             <div className="flex gap-[6px] items-center">
               <Image src={LocationImage} alt="locationimage" />
-              <span className="font-normal text-xs sm:text-sm text-[#717171]">{remoteOrOffice? 'Office': 'Remote'}</span>
+              <span className="font-normal text-xs sm:text-sm text-[#717171]">
+                {remoteOrOffice ? "Office" : "Remote"}
+              </span>
             </div>
             <div className="flex gap-[6px] items-center">
               <Image src={GraphChartImage} alt="locationimage" />
-              <span className="font-normal text-xs sm:text-sm text-[#717171]">{state}</span>
+              <span className="font-normal text-xs sm:text-sm text-[#717171]">
+                {state}
+              </span>
             </div>
             <div className="flex gap-[6px] items-center">
               <Image src={VectorMailImage} alt="locationimage" />
@@ -32,7 +43,14 @@ const CurrentOpenRole = ({id,heading,remoteOrOffice,state,positions,btnState}) =
         </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4">
-        <RoleCartButton btnState={btnState} id={id} />
+        {isTwoBtn ? (
+          <div className="flex gap-5">
+            <RoleCartButton btnState={btnState} id={id} isTwoBtn={isTwoBtn}/>
+            <RoleCartButton btnState={btnState} id={id} />
+          </div>
+        ) : (
+          <RoleCartButton btnState={btnState} id={id} />
+        )}
       </div>
     </div>
   );

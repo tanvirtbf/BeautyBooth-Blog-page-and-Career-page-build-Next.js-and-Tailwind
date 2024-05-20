@@ -3,19 +3,20 @@ import CurrentOpenRole from "@/components/CurrentOpenRole";
 
 const page = ({ params }) => {
   const id = Number(params.id);
-  const datas = roleArr.filter((item) => item.id === id);
-  console.log(datas);
+  const [data] = roleArr.filter((item) => item.id === id);
+  console.log(data);
   return (
     <div className="container">
       {params.id}
       <CurrentOpenRole
-        key={datas.id}
-        id={datas.id}
-        heading={datas.heading}
-        remoteOrOffice={datas.remoteOrOffice}
-        state={datas.state}
-        positions={datas.positions}
-        btnState={datas.btnState}
+        key={data.id}
+        id={data.id}
+        heading={data.heading}
+        remoteOrOffice={data.remoteOrOffice}
+        state={data.state}
+        positions={data.positions}
+        btnState={data.btnState}
+        isTwoBtn={true}
       />
     </div>
   );
