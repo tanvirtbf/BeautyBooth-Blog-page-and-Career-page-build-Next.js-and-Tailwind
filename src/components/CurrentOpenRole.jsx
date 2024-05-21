@@ -48,10 +48,10 @@ const CurrentOpenRole = ({
         {isTwoBtn ? (
           <div className="flex gap-5 grid-cols-12">
             <div className="col-span-6 sm:col-span-1 ">
-              <RoleCartButton btnState={btnState} id={id} isTwoBtn={true} />
+              <RoleCartButton id={id} isTwoBtn={'yes'} />
             </div>
             <div className="col-span-6 sm:col-span-1">
-              <RoleCartButton btnState={btnState} id={id}  />
+              <RoleCartButton id={id} isTwoBtn={'no'}/>
             </div>
           </div>
         ) : (
