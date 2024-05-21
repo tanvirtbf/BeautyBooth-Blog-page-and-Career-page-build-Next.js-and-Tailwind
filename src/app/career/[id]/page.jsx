@@ -16,7 +16,6 @@ const page = ({ params }) => {
         state={data.state}
         positions={data.positions}
         btnState={data.btnState}
-        isTwoBtn={true}
       />
       <div className="grid grid-cols-12 gap-6 mt-5">
         <div className="grid col-span-12 sm:col-span-8 p-6 gap-4">

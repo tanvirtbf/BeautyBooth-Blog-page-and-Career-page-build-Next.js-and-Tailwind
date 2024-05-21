@@ -17,7 +17,6 @@ const RoleCartButton = ({ btnState, id, isTwoBtn }) => {
     buttonText = "Apply Now";
   }
 
-
   return (
     <>
       <button
