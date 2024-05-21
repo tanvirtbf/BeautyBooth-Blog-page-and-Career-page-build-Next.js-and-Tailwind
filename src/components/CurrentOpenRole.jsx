@@ -51,6 +51,7 @@ const CurrentOpenRole = ({
             id={id}
             className={`bg-white border-[#DDDDDD] border-[1px] rounded-md text-center text-[#5A5A5A] text-xs sm:text-sm font-medium`}
             btnText={"All Jobs"}
+            isTwoBtn={isTwoBtn}
           />
         )}
         <RoleCartButton
