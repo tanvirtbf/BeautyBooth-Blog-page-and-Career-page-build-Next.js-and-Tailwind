@@ -11,7 +11,7 @@ const CurrentOpenRole = ({
   state,
   positions,
   btnState,
-  isTwoBtn=true,
+  isTwoBtn = true,
 }) => {
   return (
     <div className="cart-shadow rounded-lg p-4 sm:p-5 bg-white grid grid-cols-12 gap-5">
@@ -45,8 +45,22 @@ const CurrentOpenRole = ({
         </div>
       </div>
       <div className="flex justify-start sm:justify-end items-center col-span-12 sm:col-span-4 gap-5">
-        {isTwoBtn && <RoleCartButton btnState={btnState} id={id} className={`bg-white border-[#DDDDDD] border-[1px] rounded-md text-center text-[#5A5A5A] text-xs sm:text-sm font-medium`}/>}
-        <RoleCartButton btnState={btnState} id={id} />
+        {isTwoBtn && (
+          <RoleCartButton
+            btnState={true}
+            id={id}
+            className={`bg-white border-[#DDDDDD] border-[1px] rounded-md text-center text-[#5A5A5A] text-xs sm:text-sm font-medium`}
+            btnText={"All Jobs"}
+          />
+        )}
+        <RoleCartButton
+          btnState={btnState}
+          isDisable={!btnState&&true}
+          id={id}
+          isTwoBtn={isTwoBtn}
+          btnText={btnState && isTwoBtn ? "Apply Now" : "View Details"}
+          className={!btnState && "bg-[#999999]"}
+        />
       </div>
     </div>
   );
