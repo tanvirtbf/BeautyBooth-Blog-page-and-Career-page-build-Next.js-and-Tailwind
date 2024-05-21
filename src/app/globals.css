@@ -45,4 +45,10 @@ body {
   .cart-shadow{
     box-shadow: 0px 4px 16px 0px #0000000F;
   }
+  .singlePostHeading{
+    @apply font-medium text-sm sm:text-base text-[#222222]
+  }
+  .singlePostPara{
+    @apply text-[#717171] text-sm sm:text-base font-normal 
+  }
 }
