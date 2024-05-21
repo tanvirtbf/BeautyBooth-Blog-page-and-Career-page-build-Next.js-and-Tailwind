@@ -30,5 +30,4 @@ const RoleCartButton = ({ btnState, id, isTwoBtn, className , btnText, isDisable
 
 export default RoleCartButton;
 
-
 //common -- Text size in web and mobile all
