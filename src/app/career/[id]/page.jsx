@@ -2,6 +2,7 @@ import { roleArr } from "@/app/Data";
 import { skills } from "@/app/Skills";
 import CurrentOpenRole from "@/components/CurrentOpenRole";
 import SkillLists from "@/components/SkillLists";
+import Link from "next/link";
 
 const page = ({ params }) => {
   const id = Number(params.id);
@@ -102,6 +103,14 @@ const page = ({ params }) => {
                   <SkillLists key={item.id} skill={item.skill} />
                 ))}
               </div>
+            </div>
+            <div>
+              <h3 className="singlePostHeading">Website</h3>
+              <Link href={'https://beautybooth.com.bd/'} target="_blank" className="font-normal text-xs sm:text-sm text-[#ff1a58]">https://beautybooth.com.bd/</Link>
+            </div>
+            <div>
+              <h3 className="singlePostHeading">Office Location</h3>
+              <p className="singlePostPara text-sm sm:text-sm">50/4 West Hazipara, Khilgaon, Dhaka. Opposite of hazipara petrol pump</p>
             </div>
           </div>
         </div>
